@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Что посмотреть?</title>
+        <link rel="icon" href="img/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="home.css">
+    </head>
+
+      <div class="contentt">
+        <header>
+            <a href="index.html" class="header_container">Главная</a>
+            <a href="new.html" class="header_container">Новинки</a>
+            <div class="clamshell_container">
+                <div class="clamshell">
+                    <button class="button_clamshell">Жанры</button>
+                    <span class="dop-content">
+                      <a href="actionmovie.html" class="dop_header_container">Боевики</a>
+                      <a href="fantastic.html" class="dop_header_container">Фантастика</a>
+                      <a href="comedy.html" class="dop_header_container">Комедия</a>
+                      <a href="horror.html" class="dop_header_container">Ужасы</a>
+                    </span>
+                </div> 
+            </div>
+            <a href="aboutUs.html" class="header_container">О нас</a>
+        </header>
+
+        <div class="page">
+            <div class="slider__container">
+                <div class="slider__container-inner">
+                  <div class="slider-item">
+                    <h1 class="slide_text">Лучший<br>боевик</h1>
+                    <a class="button_slide" href="actionmovie.html">Перейти</a>
+                    <img class="slider-item_img" src="img/leon.jpg" alt="slider__container-item">
+                  </div>
+                  <div class="slider-item">
+                    <h1 class="slide_text">Лучшая<br>фантастика</h1>
+                    <a class="button_slide" href="fantastic.html">Перейти</a>
+                    <img class="slider-item_img" src="img/legend.jpg" alt="slider__container-item">
+                  </div>
+                  <div class="slider-item">
+                    <h1 class="slide_text">Лучшая<br>комедия</h1>
+                    <a class="button_slide" href="comedy.html">Перейти</a>
+                    <img class="slider-item_img" src="img/ivan.jpg" alt="slider__container-item">
+                  </div>
+                  <div class="slider-item">
+                    <h1 class="slide_text">Лучший<br>ужастик</h1>
+                    <a class="button_slide" href="horror.html">Перейти</a>
+                    <img class="slider-item_img" src="img/horror.jpg" alt="slider__container-item">
+                  </div>
+                </div>
+                <div class="slider__dots"></div>
+            </div>
+            <script src="slider.js"></script>
+            <script>
+                new Slider(0, { autoPlay: true, delay: 6000})
+            </script>
+            <div class="visual"></div>
+        </div>
+      </div>
+
+    <footer>
+        <div class="box_big">
+            <div class="c1">ЧтоПосмотреть?</div><div class="c1">@Copyright2022</div>
+        </div>
+        <div class="box_small">
+            <div class="pad"><a href="#" class="text">Боевики</a></div>
+            <div class="pad"><a href="#" class="text">Фантастика</a></div>
+            <div class="pad"><a href="#" class="text">Комедия</a></div>
+            <div class="pad"><a href="#" class="text">Ужасы</a></div>
+        </div>
+    </footer>
+
+</html>
